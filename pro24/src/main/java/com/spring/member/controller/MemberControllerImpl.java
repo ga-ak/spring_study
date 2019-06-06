@@ -22,6 +22,7 @@ public class MemberControllerImpl extends MultiActionController implements Membe
     @Override
     public ModelAndView listMembers(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String viewName = getViewName(request);
+        System.out.println(viewName);
         List membersList = memberService.listMembers();
         ModelAndView mav = new ModelAndView(viewName);
         mav.addObject("membersList", membersList);
@@ -58,10 +59,12 @@ public class MemberControllerImpl extends MultiActionController implements Membe
         return mav;
     }
 
+    @Override
     public ModelAndView form(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String viewName = getViewName(request);
         ModelAndView mav = new ModelAndView();
         mav.setViewName(viewName);
+
         return mav;
     }
 

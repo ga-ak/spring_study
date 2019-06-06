@@ -14,11 +14,12 @@ public class MemberDAO {
 	private static SqlSessionFactory getInstance() {
 		if (sqlMapper == null) {
 			try {
-				String resource = "mybatis/SqlMapConfig.xml";
+				String resource = "/WEB-INF/mybatis/SqlMapConfig.xml";
 				Reader reader = Resources.getResourceAsReader(resource);
 				sqlMapper = new SqlSessionFactoryBuilder().build(reader);
 				reader.close();
 			} catch (Exception e) {
+				System.out.println("개씨발 경로가 어디야?");
 				e.printStackTrace();
 			}
 		}

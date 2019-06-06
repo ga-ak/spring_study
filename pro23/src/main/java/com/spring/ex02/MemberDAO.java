@@ -1,7 +1,6 @@
 package com.spring.ex02;
 
 import java.io.Reader;
-import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -14,7 +13,7 @@ public class MemberDAO {
 	private static SqlSessionFactory getInstance() {
 		if (sqlMapper == null) {
 			try {
-				String resource = "mybatis/SqlMapConfig.xml";
+				String resource = "WEB-INF/mybatis/SqlMapConfig.xml";
 				Reader reader = Resources.getResourceAsReader(resource);
 				sqlMapper = new SqlSessionFactoryBuilder().build(reader);
 				reader.close();

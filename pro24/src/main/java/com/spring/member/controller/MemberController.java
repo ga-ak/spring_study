@@ -9,4 +9,5 @@ public interface MemberController {
     ModelAndView listMembers(HttpServletRequest request, HttpServletResponse response) throws Exception;
     ModelAndView addMember(HttpServletRequest request, HttpServletResponse response) throws Exception;
     ModelAndView removeMember(HttpServletRequest request, HttpServletResponse response) throws Exception;
+    ModelAndView form(HttpServletRequest request, HttpServletResponse response) throws Exception;
 }
