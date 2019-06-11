@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.member">
-    <resultMap id="memResult" type="memberVO">
+    <resultMap id="memResult" type="com.spring.member.vo.MemberVO">
         <result property="id" column="id" />
         <result property="pwd" column="pwd" />
         <result property="name" column="name" />
