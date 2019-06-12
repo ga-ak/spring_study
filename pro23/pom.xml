@@ -31,12 +31,12 @@
             <version>6.0.5</version>
         </dependency>
 
-        <!-- MyBatis 3.4.1 -->
+        <!-- MyBatis 3.4.6 -->
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.4.1</version>
+            <version>3.4.6</version>
         </dependency>
 
 
